@@ -31,11 +31,11 @@ const SignInPage = () => {
     }
 
     return (
-        <div className="min-h-screen  bg-gradient-to-r to-[#031a24] from-[#0f0027] text-white py-10 ">
+        <div className="min-h-[70vh] py-10 bg-gradient-to-r to-[#01110c] from-[#0f0027] text-white ">
 
-            <div className="w-6/12  mx-auto border  rounded-2xl ">
+            <div className="max-w-xl bg-gray-900 mx-auto border  rounded-2xl ">
                 <Form
-                    className="flex p-5  flex-col gap-4"
+                    className="flex p-5   flex-col gap-4"
                     render={(props) => <form {...props} data-custom="foo" />}
                     onSubmit={onSubmit}
                 >
@@ -54,11 +54,11 @@ const SignInPage = () => {
                         <Input name="email" placeholder="Enter Your Email" />
                         <FieldError />
                     </TextField>
-                    <TextField className="w-full max-w-[280px]" name="password">
+                    <TextField className="w-full " name="password">
                         <Label>Password</Label>
                         <InputGroup>
                             <InputGroup.Input
-                                className="w-full max-w-[280px]"
+                                className="w-full "
                                 type={isVisible ? "text" : "password"}
                                 placeholder='Enter Your Password'
                             />
@@ -75,13 +75,23 @@ const SignInPage = () => {
                             </InputGroup.Suffix>
                         </InputGroup>
                     </TextField>
+                    <p className="text-right">
+                        <span className="text-blue-500 cursor-pointer hover:underline">
+                            Forgot Password?
+                        </span>
+                    </p>
                     <div className="flex gap-2">
                         <Button className="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white" type="submit">
-                            <Check />
-                            Submit
+                            Sign In
                         </Button>
 
                     </div>
+                    <div className="flex items-center my-4">
+                        <div className="flex-grow border-t border-gray-600"></div>
+                        <span className="mx-3 text-gray-400 text-sm">or</span>
+                        <div className="flex-grow border-t border-gray-600"></div>
+                    </div>
+              
                 </Form>
             </div>
         </div>

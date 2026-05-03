@@ -1,6 +1,6 @@
 'use client'
 import { signOut, useSession } from "@/lib/auth-client";
-import { Avatar, Link } from "@heroui/react";
+import {  Link } from "@heroui/react";
 
 const Navbar = () => {
     const { data, ispending } = useSession();
@@ -51,7 +51,7 @@ const Navbar = () => {
                             </Link>
                             <button
                                 onClick={() => signOut()}
-                                className="rounded-md bg-danger px-4 py-2 text-sm text-danger-foreground transition-colors hover:bg-danger/80"
+                                className="bg-gradient-to-r from-blue-500 to-purple-500 text-white py-1 px-3 rounded-xl"
                             >
                                 Logout
                             </button>

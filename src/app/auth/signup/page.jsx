@@ -38,8 +38,8 @@ const SignUpPage = () => {
 
 
     return (
-        <div className="min-h-screen bg-gradient-to-r to-[#031a24] from-[#0f0027] text-white py-10  ">
-            <div className="w-6/12  mx-auto border  rounded-2xl ">
+        <div className="min-h-[70vh] py-10 bg-gradient-to-r to-[#01110c] from-[#0f0027] text-white  ">
+            <div className="max-w-xl bg-gray-900  mx-auto border  rounded-2xl ">
 
                 <Form
                     className="flex  flex-col  p-5 gap-4"
@@ -92,11 +92,11 @@ const SignUpPage = () => {
                         <Input name="email" placeholder="Enter Your Email" />
                         <FieldError />
                     </TextField>
-                    <TextField className="w-full max-w-[280px]" name="password">
+                    <TextField className="w-full " name="password">
                         <Label>Password</Label>
                         <InputGroup>
                             <InputGroup.Input
-                                className="w-full max-w-[280px]"
+                                className="w-full "
                                 type={isVisible ? "text" : "password"}
                                 placeholder='Enter Your Password'
                             />
@@ -113,14 +113,9 @@ const SignUpPage = () => {
                             </InputGroup.Suffix>
                         </InputGroup>
                     </TextField>
-                    <p className="text-right">
-                        <span className="text-blue-500 cursor-pointer hover:underline">
-                            Forgot Password?
-                        </span>
-                    </p>
+                    
                     <div className="w-full">
                         <Button className="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white " type="submit">
-                            <Check />
                             Sign Up
                         </Button>
 
