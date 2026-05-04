@@ -21,7 +21,7 @@ const ProfilePage = () => {
 
         <div className="flex min-h-[calc(100vh-4rem)] items-center justify-center bg-[#0B0D14] p-4 font-sans">
             
-            {/* Profile Card */}
+
             <div className="flex w-full max-w-[420px] flex-col items-center rounded-[2.5rem] bg-[#141824] p-10 shadow-2xl">
 
                 <div className="relative mb-5">
@@ -34,18 +34,18 @@ const ProfilePage = () => {
                     </div>
                 </div>
 
-                {/* User Name */}
+
                 <h1 className="mb-2 text-[26px] font-black tracking-wide text-[#3b82f6]">
                     {user.name || "User Name"}
                 </h1>
 
-                {/* User Email */}
+
                 <div className="mb-8 flex items-center justify-center gap-2 text-[15px] font-medium text-gray-400">
                     <Envelope className="size-4 text-[#3b82f6]" />
                     <span>{user.email || "user@example.com"}</span>
                 </div>
 
-                {/* Update Profile Button */}
+
                 <Button 
                     className="flex h-12 w-full max-w-[240px] items-center gap-3 rounded-xl bg-[#242D40] text-[15px] font-semibold text-white transition-all hover:scale-105 hover:bg-[#2d374d]"
                 >

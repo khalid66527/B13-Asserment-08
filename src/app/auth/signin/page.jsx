@@ -55,8 +55,7 @@ const SignInPage = () => {
         <div className="min-h-[70vh] py-10 bg-gradient-to-r to-[#01110c] from-[#0f0027] text-white flex items-center justify-center">
 
             <div className="w-full max-w-xl bg-[#11141F] mx-auto border border-[#1F2436] shadow-2xl rounded-2xl p-8 sm:p-10">
-                
-                {/* Header */}
+         
                 <div className="mb-6 text-center">
                     <h2 className="text-3xl font-bold text-white mb-2">Welcome Back</h2>
                     <p className="text-sm text-gray-400">Please sign in to your account</p>
@@ -88,7 +87,7 @@ const SignInPage = () => {
                         <FieldError className="text-xs text-red-500 mt-1" />
                     </TextField>
 
-                    {/* Password Field */}
+                
                     <TextField className="w-full" name="password">
                         <Label className="mb-1 text-sm font-medium text-gray-300">Password</Label>
                         <div className="relative w-full">

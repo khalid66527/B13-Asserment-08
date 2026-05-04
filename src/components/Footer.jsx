@@ -20,15 +20,15 @@ const LocationIcon = ({ className }) => (
     </svg>
 );
 
-// --- Footer Component ---
+
 const Footer = () => {
     return (
         <footer className=" pt-20 pb-10 font-sans">
             <div className="w-10/12 mx-auto px-6 lg:px-8">
-                {/* Main Content Grid */}
+
                 <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
                     
-                    {/* Column 1: Brand & Description */}
+            
                     <div className="flex flex-col">
                         <div className="flex items-center gap-3 mb-5">
                             <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#6B4DFF] font-bold text-white">
@@ -42,7 +42,6 @@ const Footer = () => {
                         </p>
                     </div>
 
-                    {/* Column 2: Explore */}
                     <div>
                         <h3 className="mb-6 text-[16px] font-bold text-white">Explore</h3>
                         <ul className="flex flex-col gap-4 text-[14px] text-[#94A3B8]">
@@ -55,21 +54,21 @@ const Footer = () => {
                     <div>
                         <h3 className="mb-6 text-[16px] font-bold text-white">Contact Us</h3>
                         <ul className="flex flex-col gap-5">
-                            {/* Email */}
+                  
                             <li className="flex items-center gap-4">
                                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#111827]">
                                     <MailIcon className="h-5 w-5 text-[#3B82F6]" />
                                 </div>
                                 <span className="text-[14px] text-[#94A3B8]">khalidhasan678954321@gmail.com</span>
                             </li>
-                            {/* Phone */}
+                
                             <li className="flex items-center gap-4">
                                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#1E142B]">
                                     <PhoneIcon className="h-5 w-5 text-[#A855F7]" />
                                 </div>
                                 <span className="text-[14px] text-[#94A3B8]">+880 123 456 789</span>
                             </li>
-                            {/* Location */}
+                    
                             <li className="flex items-center gap-4">
                                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#271414]">
                                     <LocationIcon className="h-5 w-5 text-[#F97316]" />
@@ -80,7 +79,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                {/* Bottom Bar: Copyright & Socials */}
+
                 <div className="mt-16 flex flex-col items-center justify-between border-t border-[#1F2436]  ">
                     <p className="text-[14px] pt-5 text-[#94A3B8]">
                         &copy; {new Date().getFullYear()} <span className="font-semibold text-white">Tiles Gallery</span>. All rights reserved.

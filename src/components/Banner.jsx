@@ -120,7 +120,6 @@ const Banner = () => {
                         </button>
                     </Link>
 
-                    {/* Learn More বাটনে ক্লিক করলে /about বা অন্য কোনো পেজে যাবে */}
                     <Link href="/about">
                         <button className="rounded-xl border border-white px-8 py-3 font-semibold text-white transition-colors hover:bg-white hover:text-black">
                             Learn More

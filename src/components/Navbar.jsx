@@ -16,27 +16,25 @@ const Navbar = () => {
         <nav className="sticky top-0 z-40 w-full border-b border-separator bg-background/70 backdrop-blur-lg">
             <header className="flex h-16 items-center justify-between px-6">
 
-                {/* Left: Website Logo (Navigates to Home) */}
                 <div className="flex flex-1 items-center gap-3">
                     <Link href="/" className="font-bold text-xl text-foreground hover:opacity-80 transition-opacity">
                         ACME
                     </Link>
                 </div>
 
-                {/* Centre: Links for Home, All Tiles, and My Profile */}
                 <ul className="flex items-center justify-center gap-6 font-medium">
                     <li><Link href="/" color="foreground" className="hover:text-primary transition-colors">Home</Link></li>
                     <li><Link href="/alltiles" color="foreground" className="hover:text-primary transition-colors">All Tiles</Link></li>
                     {/* <li><Link href="/profile" color="foreground" className="hover:text-primary transition-colors">My Profile</Link></li> */}
                 </ul>
 
-                {/* Right: Auth actions depending on Login state */}
+
                 <div className="flex flex-1 items-center justify-end gap-4">
                     {user ? (
                         <>
-                            {/* If Logged In: User Profile Page and a "Logout" button */}
+
                             <Link href="/profile" className="transition-transform hover:scale-105">
-                                {/* HeroUI এর Avatar এর বদলে সাধারণ <img> ট্যাগ */}
+
                                 {user.image ? (
                                     <img 
                                         src={user.image} 
@@ -58,7 +56,6 @@ const Navbar = () => {
                         </>
                     ) : (
                         <>
-                            {/* If Logged Out: A "Login" button (and SignUp kept for completeness) */}
                             <Link
                                 href="/auth/signin"
                                 color="foreground"
