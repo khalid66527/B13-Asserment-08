@@ -1,5 +1,6 @@
 import { auth } from "@/lib/auth";
 import { headers } from "next/headers";
+import Link from "next/link";
 import { redirect } from "next/navigation";
 
 const getTilesData = async () => {
@@ -99,9 +100,12 @@ const AllTiles = async () => {
                                         </span>
                                     </div>
 
-                                    <button className="flex items-center justify-center rounded-xl bg-[#181B27] border border-[#2D3142] px-5 py-2.5 text-sm font-bold text-white transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#5A63FF] group-hover:to-[#A940FF] group-hover:border-transparent group-hover:shadow-[0_0_15px_rgba(107,77,255,0.4)]">
-                                        View Details
-                                    </button>
+
+                                    <Link href={`/alltiles/${tile.id}`}>
+                                        <button className="flex items-center justify-center rounded-xl bg-[#181B27] border border-[#2D3142] px-5 py-2.5 text-sm font-bold text-white transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#5A63FF] group-hover:to-[#A940FF] group-hover:border-transparent group-hover:shadow-[0_0_15px_rgba(107,77,255,0.4)]">
+                                            View Details
+                                        </button>
+                                    </Link>
 
                                 </div>
 
