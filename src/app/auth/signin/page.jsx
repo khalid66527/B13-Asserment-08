@@ -6,6 +6,7 @@ import { Button, FieldError, Form, Input, Label, TextField } from '@heroui/react
 import Link from 'next/link';
 import { useState } from 'react';
 import { FcGoogle } from 'react-icons/fc';
+import { toast } from "react-toastify";
 
 const SignInPage = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -28,10 +29,10 @@ const SignInPage = () => {
         console.log("Signin Error:", error);
         
         if (error) {
-            alert("Error sign In: " + error.message)
+            toast("Error sign In: " + error.message)
         }
         if (data) {
-            alert('Sign In sucessfully')
+            toast('Sign In sucessfully')
 
             window.location.href = "/alltiles";
         }
@@ -43,11 +44,11 @@ const SignInPage = () => {
         });
 
         if (error) {
-            alert("Error signing in with Google: " + error.message);
+            toast("Error signing in with Google: " + error.message);
         }
 
         if (data) {
-            alert("Google Sign In Successful!");
+            toast("Google Sign In Successful!");
         }
     };
 

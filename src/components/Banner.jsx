@@ -52,7 +52,7 @@ const Banner = () => {
     }, [displayText, isDeleting, fullText]);
 
     return (
-        <div className="relative h-[50vh] w-full overflow-hidden">
+        <div className="relative h-[60vh] w-full overflow-hidden">
             
 
             <style>{`
@@ -92,9 +92,9 @@ const Banner = () => {
                 />
             ))}
 
-            <div className="absolute inset-0 bg-black/60"></div>
+            <div className="absolute  inset-0  bg-black/60"></div>
 
-            <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-4 text-center">
+            <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-4 text-center ">
 
                 <h1 className="mb-4  text-3xl font-extrabold md:text-7xl flex items-center justify-center min-h-[48px] md:min-h-[72px]">
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#5A63FF] to-white animate-shine">
@@ -120,9 +120,9 @@ const Banner = () => {
                         </button>
                     </Link>
 
-                    <Link href="/about">
+                    <Link href="/profile">
                         <button className="rounded-xl border border-white px-8 py-3 font-semibold text-white transition-colors hover:bg-white hover:text-black">
-                            Learn More
+                            Profile
                         </button>
                     </Link>
                     

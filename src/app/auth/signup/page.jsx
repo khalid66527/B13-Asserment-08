@@ -5,6 +5,7 @@ import { Button, FieldError, Form, Input, Label, TextField } from "@heroui/react
 import Link from "next/link";
 import { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
+import { toast } from "react-toastify";
 
 const SignUpPage = () => {
     const handleGoogleSignIn = async () => {
@@ -13,11 +14,11 @@ const SignUpPage = () => {
         });
 
         if (error) {
-            alert("Error signing in with Google: " + error.message);
+            toast("Error signing in with Google: " + error.message);
         }
 
         if (data) {
-            alert("Google Sign In Successful!");
+            toast("Google Sign In Successful!");
         }
     };
     const [isVisible, setIsVisible] = useState(false);
@@ -41,10 +42,10 @@ const SignUpPage = () => {
         console.log("Signup Error:", error);
 
         if (error) {
-            alert("Error signing up: " + error.message);
+            toast("Error signing up: " + error.message);
         }
         if (data) {
-            alert('Sign up successful! Please login.');
+            toast('Sign up successful! Please login.');
             window.location.href = "/auth/signin";
         }
     };
