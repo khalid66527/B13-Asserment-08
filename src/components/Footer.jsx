@@ -23,8 +23,8 @@ const LocationIcon = ({ className }) => (
 // --- Footer Component ---
 const Footer = () => {
     return (
-        <footer className="bg-[#0B0D14] pt-20 pb-10 font-sans">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <footer className=" pt-20 pb-10 font-sans">
+            <div className="w-10/12 mx-auto px-6 lg:px-8">
                 {/* Main Content Grid */}
                 <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
                     
@@ -83,7 +83,7 @@ const Footer = () => {
                 {/* Bottom Bar: Copyright & Socials */}
                 <div className="mt-16 flex flex-col items-center justify-between border-t border-[#1F2436]  ">
                     <p className="text-[14px] pt-5 text-[#94A3B8]">
-                        &copy; {new Date().getFullYear()} <span className="font-semibold text-white">SkillSphere</span>. All rights reserved.
+                        &copy; {new Date().getFullYear()} <span className="font-semibold text-white">Tiles Gallery</span>. All rights reserved.
                     </p>
                     
                     

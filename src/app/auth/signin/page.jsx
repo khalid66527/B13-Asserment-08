@@ -31,18 +31,26 @@ const SignInPage = () => {
     }
 
     return (
-        <div className="min-h-[70vh] py-10 bg-gradient-to-r to-[#01110c] from-[#0f0027] text-white ">
+        <div className="min-h-[70vh] py-10 bg-gradient-to-r to-[#01110c] from-[#0f0027] text-white flex items-center justify-center">
 
-            <div className="max-w-xl bg-gray-900 mx-auto border  rounded-2xl ">
+            <div className="w-full max-w-xl bg-[#11141F] mx-auto border border-[#1F2436] shadow-2xl rounded-2xl p-8 sm:p-10">
+                
+                {/* Header (Optional, for better look) */}
+                <div className="mb-6 text-center">
+                    <h2 className="text-3xl font-bold text-white mb-2">Welcome Back</h2>
+                    <p className="text-sm text-gray-400">Please sign in to your account</p>
+                </div>
+
                 <Form
-                    className="flex p-5   flex-col gap-4"
+                    className="flex flex-col gap-5 w-full"
                     render={(props) => <form {...props} data-custom="foo" />}
                     onSubmit={onSubmit}
                 >
+                    {/* Email Field */}
                     <TextField
                         isRequired
-
                         type="email"
+                        className="w-full"
                         validate={(value) => {
                             if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(value)) {
                                 return "Please enter a valid email address";
@@ -50,48 +58,61 @@ const SignInPage = () => {
                             return null;
                         }}
                     >
-                        <Label>Email</Label>
-                        <Input name="email" placeholder="Enter Your Email" />
-                        <FieldError />
+                        <Label className="mb-1 text-sm font-medium text-gray-300">Email</Label>
+                        <Input 
+                            name="email" 
+                            placeholder="Enter Your Email" 
+                            className="bg-[#181B27] border-[#2D3142] text-white h-12 rounded-xl"
+                        />
+                        <FieldError className="text-xs text-red-500 mt-1" />
                     </TextField>
-                    <TextField className="w-full " name="password">
-                        <Label>Password</Label>
-                        <InputGroup>
-                            <InputGroup.Input
-                                className="w-full "
+
+                    {/* Password Field */}
+                    <TextField className="w-full" name="password">
+                        <Label className="mb-1 text-sm font-medium text-gray-300">Password</Label>
+                        <div className="relative w-full">
+                            <Input
+                                name="password"
+                                className="w-full bg-[#181B27] border-[#2D3142] text-white h-12 rounded-xl pr-10"
                                 type={isVisible ? "text" : "password"}
                                 placeholder='Enter Your Password'
                             />
-                            <InputGroup.Suffix className="pr-0">
-                                <Button
-                                    isIconOnly
-                                    aria-label={isVisible ? "Hide password" : "Show password"}
-                                    size="sm"
-                                    variant="ghost"
-                                    onPress={() => setIsVisible(!isVisible)}
-                                >
-                                    {isVisible ? <Eye className="size-4" /> : <EyeSlash className="size-4" />}
-                                </Button>
-                            </InputGroup.Suffix>
-                        </InputGroup>
+                            {/* Password Toggle Button (Absolute Positioned for perfect alignment) */}
+                            <button
+                                type="button"
+                                className="absolute inset-y-0 right-3 flex items-center justify-center text-gray-400 hover:text-white focus:outline-none"
+                                onClick={() => setIsVisible(!isVisible)}
+                                aria-label={isVisible ? "Hide password" : "Show password"}
+                            >
+                                {isVisible ? <Eye className="size-5" /> : <EyeSlash className="size-5" />}
+                            </button>
+                        </div>
                     </TextField>
-                    <p className="text-right">
-                        <span className="text-blue-500 cursor-pointer hover:underline">
+
+                    {/* Forgot Password */}
+                    <p className="text-right mt-[-8px]">
+                        <span className="text-sm text-blue-500 font-medium cursor-pointer hover:underline hover:text-blue-400 transition-colors">
                             Forgot Password?
                         </span>
                     </p>
-                    <div className="flex gap-2">
-                        <Button className="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white" type="submit">
+
+                    {/* Submit Button */}
+                    <div className="flex gap-2 mt-2">
+                        <Button 
+                            className="w-full h-12 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold rounded-xl shadow-lg hover:opacity-90 transition-opacity" 
+                            type="submit"
+                        >
                             Sign In
                         </Button>
+                    </div>
 
-                    </div>
+                    {/* Divider */}
                     <div className="flex items-center my-4">
-                        <div className="flex-grow border-t border-gray-600"></div>
-                        <span className="mx-3 text-gray-400 text-sm">or</span>
-                        <div className="flex-grow border-t border-gray-600"></div>
+                        <div className="flex-grow border-t border-[#2D3142]"></div>
+                        <span className="mx-4 text-gray-500 text-sm font-medium">or</span>
+                        <div className="flex-grow border-t border-[#2D3142]"></div>
                     </div>
-              
+
                 </Form>
             </div>
         </div>

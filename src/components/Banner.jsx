@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const Banner = () => {
@@ -51,7 +52,7 @@ const Banner = () => {
     }, [displayText, isDeleting, fullText]);
 
     return (
-        <div className="relative h-[80vh] w-full overflow-hidden">
+        <div className="relative h-[50vh] w-full overflow-hidden">
             
 
             <style>{`
@@ -93,11 +94,10 @@ const Banner = () => {
 
             <div className="absolute inset-0 bg-black/60"></div>
 
-            {/* Content */}
             <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-4 text-center">
 
                 <h1 className="mb-4  text-3xl font-extrabold md:text-7xl flex items-center justify-center min-h-[48px] md:min-h-[72px]">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-300 to-white animate-shine">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#5A63FF] to-white animate-shine">
                         {displayText}
                     </span>
                     <span className="text-cyan-300 ml-1 blink-cursor">|</span>
@@ -114,9 +114,18 @@ const Banner = () => {
                     className="animate-slide-up flex gap-4" 
                     style={{ animationDelay: '0.4s', opacity: 0 }}
                 >
-                    <button className="rounded-xl bg-[#6B4DFF] px-8 py-3 font-semibold text-white transition-transform hover:scale-105">
-                        Browse Now
-                    </button>
+                    <Link href="/alltiles">
+                        <button className="rounded-xl bg-[#6B4DFF] px-8 py-3 font-semibold text-white transition-transform hover:scale-105">
+                            Explore Now
+                        </button>
+                    </Link>
+
+                    {/* Learn More বাটনে ক্লিক করলে /about বা অন্য কোনো পেজে যাবে */}
+                    <Link href="/about">
+                        <button className="rounded-xl border border-white px-8 py-3 font-semibold text-white transition-colors hover:bg-white hover:text-black">
+                            Learn More
+                        </button>
+                    </Link>
                     
                 </div>
 

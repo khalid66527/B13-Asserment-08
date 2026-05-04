@@ -1,0 +1,124 @@
+{
+  "tiles": [
+    {
+      "id": "tile_001",
+      "title": "Ceramic Blue Tile",
+      "description": "Premium ceramic tile with blue glaze finish",
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+      "category": "ceramic",
+      "price": 45.99,
+      "currency": "USD",
+      "dimensions": "60x60 cm",
+      "material": "Ceramic",
+      "inStock": true
+    },
+    {
+      "id": "tile_002",
+      "title": "Marble White Tile",
+      "description": "Elegant white marble finish tile",
+      "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6",
+      "category": "marble",
+      "price": 75.50,
+      "currency": "USD",
+      "dimensions": "80x80 cm",
+      "material": "Marble",
+      "inStock": true
+    },
+    {
+      "id": "tile_003",
+      "title": "Glossy Black Tile",
+      "description": "Shiny black glossy surface tile",
+      "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c",
+      "category": "ceramic",
+      "price": 55.00,
+      "currency": "USD",
+      "dimensions": "60x60 cm",
+      "material": "Ceramic",
+      "inStock": true
+    },
+    {
+      "id": "tile_004",
+      "title": "Wood Finish Tile",
+      "description": "Natural wood texture tile",
+      "image": "https://images.unsplash.com/photo-1600210492493-0946911123ea",
+      "category": "wood",
+      "price": 65.99,
+      "currency": "USD",
+      "dimensions": "120x20 cm",
+      "material": "Porcelain",
+      "inStock": true
+    },
+    {
+      "id": "tile_005",
+      "title": "Stone Grey Tile",
+      "description": "Durable stone finish tile",
+      "image": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c",
+      "category": "stone",
+      "price": 60.00,
+      "currency": "USD",
+      "dimensions": "60x60 cm",
+      "material": "Stone",
+      "inStock": true
+    },
+    {
+      "id": "tile_006",
+      "title": "Patterned Tile",
+      "description": "Decorative patterned tile design",
+      "image": "https://images.unsplash.com/photo-1615874959474-d609969a20ed",
+      "category": "decorative",
+      "price": 70.25,
+      "currency": "USD",
+      "dimensions": "30x30 cm",
+      "material": "Ceramic",
+      "inStock": true
+    },
+    {
+      "id": "tile_007",
+      "title": "Bathroom Tile",
+      "description": "Water-resistant bathroom tile",
+      "image": "https://images.unsplash.com/photo-1582582494700-2c4e5f4eab8f",
+      "category": "bathroom",
+      "price": 50.00,
+      "currency": "USD",
+      "dimensions": "40x40 cm",
+      "material": "Ceramic",
+      "inStock": true
+    },
+    {
+      "id": "tile_008",
+      "title": "Kitchen Tile",
+      "description": "Stylish kitchen wall tile",
+      "image": "https://images.unsplash.com/photo-1556912167-f556f1f39b2c",
+      "category": "kitchen",
+      "price": 48.75,
+      "currency": "USD",
+      "dimensions": "30x60 cm",
+      "material": "Ceramic",
+      "inStock": true
+    },
+    {
+      "id": "tile_009",
+      "title": "Luxury Gold Tile",
+      "description": "Premium gold finish tile",
+      "image": "https://images.unsplash.com/photo-1600607687644-c94bf0f4f8b1",
+      "category": "luxury",
+      "price": 120.00,
+      "currency": "USD",
+      "dimensions": "60x60 cm",
+      "material": "Porcelain",
+      "inStock": true
+    },
+    {
+      "id": "tile_010",
+      "title": "Outdoor Tile",
+      "description": "Weather-resistant outdoor tile",
+      "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "category": "outdoor",
+      "price": 68.00,
+      "currency": "USD",
+      "dimensions": "60x60 cm",
+      "material": "Stone",
+      "inStock": true
+    }
+  ]
+}
