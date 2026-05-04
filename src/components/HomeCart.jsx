@@ -1,8 +1,8 @@
 import Link from "next/link";
 
 const getTilesData = async () => {
-    const res = await fetch('http://localhost:5000/tiles', {
-        cache: 'no-store' 
+    const res = await fetch('https://b13-assignment-08-server-1.onrender.com/tiles', {
+        cache: 'no-store'
     })
     return res.json()
 }
@@ -10,17 +10,17 @@ const getTilesData = async () => {
 const HomeCart = async () => {
 
     const TilesData = await getTilesData()
-  
+
 
     return (
         <div className="min-h-screen bg-[#0B0D14] p-6 lg:p-10 font-sans">
             <div className="w-10/12 mx-auto">
 
-              
+
                 <div className="mb-10 border-b border-[#1F2436] pb-6">
                     <div className="flex flex-col justify-center items-center">
                         <h1 className="text-3xl md:text-5xl font-extrabold text-white tracking-wide">
-                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5A63FF] to-[#A940FF]">Tiles Collection</span>
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5A63FF] to-[#A940FF]">Tiles Collection</span>
                         </h1>
                         <p className="mt-2 text-sm text-[#94A3B8]">
                             Explore our top picks for your next project
@@ -28,7 +28,7 @@ const HomeCart = async () => {
                     </div>
                 </div>
 
-         
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
 
                     {TilesData.slice(0, 12).map((tile) => (
@@ -36,7 +36,7 @@ const HomeCart = async () => {
                             key={tile.id}
                             className="group relative flex flex-col overflow-hidden rounded-[24px] bg-[#11141F] border border-[#1F2436] transition-all duration-300 hover:-translate-y-2 hover:border-[#6B4DFF]/50 hover:shadow-[0_12px_40px_-15px_rgba(107,77,255,0.3)]"
                         >
-                      
+
                             <div className="relative w-full h-56 overflow-hidden bg-[#181B27]">
                                 <img
                                     src={tile.image}
@@ -44,16 +44,16 @@ const HomeCart = async () => {
                                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                 />
 
-                             
+
                                 <div className="absolute top-4 right-4 rounded-full bg-black/50 backdrop-blur-md border border-white/10 px-3 py-1 text-xs font-semibold text-white shadow-lg">
                                     {tile.category || 'Premium'}
                                 </div>
                             </div>
 
-             
+
                             <div className="flex flex-1 flex-col p-6">
 
-                             
+
                                 <div className="mb-3 flex items-center justify-between text-[13px] font-medium">
                                     <span className="text-[#64748B] bg-[#181B27] px-2.5 py-1 rounded-md border border-[#1F2436]">
                                         {tile.dimensions || 'Standard Size'}

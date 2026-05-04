@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🎨 টাইলস গ্যালারি
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+টাইলস গ্যালারি হলো একটি আধুনিক ও প্রিমিয়াম ওয়েব অ্যাপ্লিকেশন, যা উচ্চ-মানের টাইলসের বিশাল সংগ্রহ প্রদর্শনের জন্য ডিজাইন করা হয়েছে। ব্যবহারকারীরা বিভিন্ন টাইলস দেখতে, নির্দিষ্ট ক্যাটাগরির জন্য অনুসন্ধান করতে এবং মাপ, মজুদের প্রাপ্যতা ও মূল্যসহ বিস্তারিত তথ্য দেখতে পারেন।
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+প্ল্যাটফর্মটি একটি মসৃণ, ডার্ক-থিমযুক্ত UI দিয়ে তৈরি করা হয়েছে, যা একটি নির্বিঘ্ন এবং দৃষ্টিনন্দন ব্যবহারকারীর অভিজ্ঞতা প্রদানের উপর গুরুত্ব দেয়।
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## মূল বৈশিষ্ট্যসমূহ
 
-## Learn More
+# প্রিমিয়াম ডার্ক UI:
+ উচ্চ-মানের ছবি প্রদর্শনের জন্য বিশেষভাবে তৈরি একটি দৃষ্টিনন্দন এবং রেসপন্সিভ ডিজাইন।
 
-To learn more about Next.js, take a look at the following resources:
+# রিয়েল-টাইম সার্চ:
+ একটি স্মার্ট, অ্যানিমেটেড সার্চ বারের মাধ্যমে নাম বা ক্যাটাগরি অনুযায়ী তাৎক্ষণিকভাবে টাইল ফিল্টার করুন।
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# অথেনটিকেশন:
+ প্রোফাইল ম্যানেজমেন্ট সহ নিরাপদ ইউজার লগইন/সাইন-আপ কার্যকারিতা।
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# ডাইনামিক কন্টেন্ট:
+ সর্বোত্তম পারফরম্যান্স এবং এসইও-এর জন্য সার্ভার-সাইড ডেটা ফেচিং।
 
-## Deploy on Vercel
+# ইন্টারেক্টিভ গ্রিড:
+ টাইল কার্ডগুলিতে সুন্দর হোভার ইফেক্ট এবং অ্যানিমেশন।
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# স্টক প্রাপ্যতা
+: স্টকে থাকা এবং স্টকের বাইরে থাকা আইটেমগুলির জন্য ভিজ্যুয়াল ইন্ডিকেটর।
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## ব্যবহৃত টেক স্ট্যাক ও প্রযুক্তিসমূহ
+
+-  [Next.js](https://nextjs.org/) 
+-  [Better auth](https://better-auth.com/) 
+-  [mongodb](https://www.mongodb.com/) 
+-  [json server](https://www.npmjs.com/) 
+-  [react icons](https://react-icons.github.io/react-icons/search/#q=home) 
+-  [tailwindcss](hhttps://tailwindcss.com/) 
+-  [Daisy Ui](https://daisyui.com/docs/cdn/) 
+-  [Hero Ui](https://heroui.com/) 
+
+

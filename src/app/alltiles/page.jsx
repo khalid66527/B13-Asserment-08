@@ -5,7 +5,7 @@ import { redirect } from "next/navigation";
 import TileClient from "@/components/TileClient";
 
 const getTilesData = async () => {
-    const res = await fetch('http://localhost:5000/tiles', { cache: 'no-store' });
+    const res = await fetch('https://b13-assignment-08-server-1.onrender.com/tiles', { cache: 'no-store' });
     return res.json();
 }
 
